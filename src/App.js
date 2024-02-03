@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   async function requestPermission() {
-    const permission = await Notification.requestPermission();
+    const permission = await Notification.requestPermission(); //in built functions in js
     if (permission === "granted") {
       // Generate Token
       const token = await getToken(messaging, {
